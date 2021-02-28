@@ -3,34 +3,42 @@
     <head>
         <link rel="stylesheet" href="style.css" />
         <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/5661425ff3.js" crossorigin="anonymous"></script>
         <title>Reservia</title>
     </head>
     <body>
         <header>
             <img src="img/logo/Reservia.svg" alt="logo">
+            <a href="#">S'inscrire</a>
             <nav class="menu">
                 <ul>
-                    <li><a href="#">Hébergements</a></li>
-                    <li><a href="#">Activités</a></li>
-                    <li><a href="#">S'inscrire</a></li>
+                    <li><a href="#hebergement">Hébergements</a></li>
+                    <li><a href="#activities">Activités</a></li>
                 </ul>
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+                <i class="fas fa-map-marker-alt"></i><input type="search">
+                <button>Rechercher</button>
                 <div class="submenu">
-                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p>En plein centre ville ou en pleine nature</p>
-                    <input type="search">
-                    <button>Rechercher</button>
                     <h1>Filtres</h1>
-                    <ul class="filter">
-                        <li>Économique</li>
-                        <li>Familial</li>
-                        <li>Romantique</li>
-                        <li>Animaux autorisés</li>
-                    </ul>
+                    <div class="filter">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <p>Économique</p>
+                        <i class="fas fa-child"></i>
+                        <p>Familial</p>
+                        <i class="fas fa-heart"></i>
+                        <p>Romantique</p>
+                        <i class="fas fa-dog"></i>
+                        <p>Animaux autorisés</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <i class="fas fa-info"></i>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </nav>
         </header>
-        <section class="hebergement">
+        <section id="hebergement">
             <h1>Hébergements à Marseille</h1>
             <a href="#"><img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">Auberge la Cannebière</a>
             <a href="#"><img src="img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">Hôtel du port</a>
@@ -41,12 +49,13 @@
             <p>Afficher plus</p>
             <aside class="popularity">
                 <h2>Les plus populaires</h2>
+                <i class="fas fa-chart-line"></i>
                 <a href="#"><img src="img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">Hôtel Le soleil du matin</a>
                 <a href="#"><img src="img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes">Au coeur de l'eau Chambres d'hôtes</a>
                 <a href="#"><img src="img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel tout Bleu et Blanc">Hôtel tout Bleu et Blanc</a>
             </aside>
         </section>
-        <section class="activities">
+        <section id="activities">
             <h1>Activités à Marseille</h1>
             <a href="#"><img src="img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">Vieux Port</a>
             <a href="#"><img src="img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">Fort de Pomègues</a>
