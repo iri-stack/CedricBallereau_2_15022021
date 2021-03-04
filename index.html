@@ -7,38 +7,41 @@
         <title>Reservia</title>
     </head>
     <body>
-        <header>
-            <img src="img/logo/Reservia.svg" alt="logo">
-            <a href="#">S'inscrire</a>
-            <nav class="menu">
-                <ul>
-                    <li><a href="#hebergement">Hébergements</a></li>
-                    <li><a href="#activities">Activités</a></li>
-                </ul>
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
-                <i class="fas fa-map-marker-alt"></i><input type="search">
-                <button>Rechercher</button>
-                <div class="submenu">
-                    <h1>Filtres</h1>
-                    <div class="filter">
-                        <i class="fas fa-money-bill-wave"></i>
-                        <p>Économique</p>
-                        <i class="fas fa-child"></i>
-                        <p>Familial</p>
-                        <i class="fas fa-heart"></i>
-                        <p>Romantique</p>
-                        <i class="fas fa-dog"></i>
-                        <p>Animaux autorisés</p>
-                    </div>
+        <header class="header">
+            <div class="head">
+                <img src="img/logo/Reservia.svg" alt="logo">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#hosting">Hébergements</a></li>
+                        <li><a href="#activities">Activités</a></li>
+                    </ul>
+                </nav>
+                <a href="#">S'inscrire</a>
+            </div>
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="search" placeholder="Marseille, France">
+            <button>Rechercher</button>
+            <div class="submenu">
+                <h2>Filtres</h2>
+                <div class="filter">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <p>Économique</p>
+                    <i class="fas fa-child"></i>
+                    <p>Familial</p>
+                    <i class="fas fa-heart"></i>
+                    <p>Romantique</p>
+                    <i class="fas fa-dog"></i>
+                    <p>Animaux autorisés</p>
                 </div>
-                <div class="info">
-                    <i class="fas fa-info"></i>
-                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
-                </div>
-            </nav>
+            </div>
+            <div class="infoResult">
+                <i class="fas fa-info"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
         </header>
-        <section id="hebergement">
+        <section id="hosting">
             <h1>Hébergements à Marseille</h1>
             <a href="#"><img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">Auberge la Cannebière</a>
             <a href="#"><img src="img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">Hôtel du port</a>
@@ -65,22 +68,28 @@
             <a href="#"><img src="img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamps">Parc Longchamps</a>
         </section>
         <footer>
-            <h2>A propos</h2>
-            <ul class="about">
-                <li>Fonctionnement du site</li>
-                <li>Conditions générales de vente</li>
-                <li>Données de confidentialité</li>
-            </ul>
-            <h2>Nos hébergements</h2>
-            <ul class="ourhebergement">
-                <li>Chartre de qualité</li>
-                <li>Soumettre votre hôtel</li>
-            </ul>
-            <h2>Assistance</h2>
-            <ul class="assistance">
-                <li>Centre d'aide</li>
-                <li>Nous contacter</li>
-            </ul>
+            <div class="about">
+                <h3>A propos</h3>
+                <ul>
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales de vente</a></li>
+                    <li><a href="#">Données de confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="hebergement">
+                <h3>Nos hébergements</h3>
+                <ul>
+                    <li><a href="#">Chartre de qualité</a></li>
+                    <li><a href="#">Soumettre votre hôtel</a></li>
+                </ul>
+            </div>
+            <div class="assistance">
+                <h3>Assistance</h3>
+                <ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
+            </div>
         </footer>
     </body>
 </html>
