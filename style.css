@@ -283,7 +283,7 @@ a:visited{
     background-color: #F2F2F2;
     border-radius: 20px 20px 20px 20px;
     width: 63%;
-    
+    height: auto;
 }
 
 .hosting h1{
@@ -294,19 +294,24 @@ a:visited{
 .mosaic{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 80%;
     max-width: 1300px;
-}
-
-#hosting img{
-     width: 30%;
-     object-fit: cover;
-     height: auto;
+    margin: auto;
 }
 
 .squaremosaic{
-    cover: #F2F2F2;
+    background-color: white;
+    width: 30%;
+    border-radius: 20px 20px 20px 20px;
+    margin: 10px;
 }
+
+#hosting img{
+     width: 100%;
+     height: auto;
+}
+
 /* aside Populaire */
 
 .popularity{
