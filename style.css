@@ -22,14 +22,14 @@ body{
 
 .imgheader{
     width: 70%;
-    
 }
 
-.header>a{
+.signup{
     order: 1;
     width: 10%;
     text-align: center;
     font-size: 1.2em;
+    color: #0065FC;
 }
 
 .menu ul{
@@ -46,6 +46,10 @@ body{
     font-size: 1.2em;
 }
 
+.menu a{
+    color: inherit;
+}
+
 a:link{
     text-decoration: none;
 }
@@ -59,7 +63,7 @@ a:visited{
     border-top: 3px #0065FC solid;
 }
 
-/* Nouvelles règles pour les écrans avec 700px de large maximum */
+/* Nouvelles règles (header) pour les écrans avec 700px de large maximum */
 
 @media all and (max-width: 700px){
     .header{
@@ -145,7 +149,7 @@ a:visited{
     cursor: pointer;
 }
 
-/* Nouvelles règles pour les écrans avec 701px de large minimum */
+/* Nouvelles règles (barre de recherche) pour les écrans avec 701px de large minimum */
 
 @media all and (min-width: 701px){
     .iconsearch{
@@ -153,7 +157,7 @@ a:visited{
     }
 }
 
-/* Nouvelles règles pour les écrans avec 700px de large maximum */
+/* Nouvelles règles (barre de recherche) pour les écrans avec 700px de large maximum */
 
 @media all and (max-width: 700px){
     .button{
@@ -222,7 +226,7 @@ a:visited{
     font-size: 1.2em;
 }
 
-/* Nouvelles règles pour les écrans avec 700px de large maximum */
+/* Nouvelles règles (Filtre) pour les écrans avec 700px de large maximum */
 
 @media all and (max-width: 700px){
     .submenu{
@@ -265,28 +269,44 @@ a:visited{
     margin: auto;
 }
 
+.squaremosaic{
+    color: initial;
+}
+
+.squaremosaic i{
+    color: #0065FC;
+}
+
 /* Hebergement */
 
 .hosting{
     background-color: #F2F2F2;
     border-radius: 20px 20px 20px 20px;
     width: 63%;
+    
 }
 
 .hosting h1{
-    padding-left: 20px;
+    padding-top: 30px;
+    padding-left: 30px;
 }
 
 .mosaic{
     display: flex;
     flex-wrap: wrap;
+    width: 80%;
+    max-width: 1300px;
 }
 
 #hosting img{
-     max-width: 10%;
+     width: 30%;
+     object-fit: cover;
      height: auto;
- }
+}
 
+.squaremosaic{
+    cover: #F2F2F2;
+}
 /* aside Populaire */
 
 .popularity{
@@ -309,12 +329,19 @@ a:visited{
     padding-right: 20px;
 }
 
-
 /* Section activités */
 
-#activites {
-    background-color: #0065FC;
-    flex-flow: row;
+#activities{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#activities h1{
+    width: 100%;
 }
 
 #activities img{
