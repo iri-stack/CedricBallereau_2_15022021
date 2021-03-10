@@ -2,6 +2,7 @@
 <html lang="fr">
     <head>
         <link rel="stylesheet" href="style.css" />
+        <meta name="viewport" content="width=device-width,initial-scale=1"><!--Permettra d'utiliser les media query-->
         <meta charset="utf-8">
         <script src="https://kit.fontawesome.com/5661425ff3.js" crossorigin="anonymous"></script>
         <title>Reservia</title>
@@ -29,11 +30,16 @@
                 <i class="fas fa-map-marker-alt"></i>
                 <input type="search" value="Marseille, France" placeholder="Marseille, France">
                 <input type="submit" class="button" value="Rechercher" disabled="disabled">
-                <i class="fas fa-search"></i>
+                <div class="iconsearch">
+                    <i class="fas fa-search"></i>
+                </div>
             </div>
             <!-- Filtres -->
             <div class="submenu">
-                <h2 class="titlefilter">Filtres</h2>
+                <div class="titlefilter">
+                    <h2>Filtres</h2>
+                </div>
+                <div class="groupfilter">
                 <div class="filter">
                     <i class="fas fa-money-bill-wave"></i>
                     <span class="filtername">Économique</span>
@@ -49,7 +55,7 @@
                 <div class="filter">
                     <i class="fas fa-dog"></i>
                     <span class="filtername">Animaux autorisés</span>
-                </div>
+                </div></div>
             </div>
             <div class="infoResult">
                 <i class="fas fa-info"></i>
