@@ -6,40 +6,43 @@
 body{
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
+    margin: 0;
 }
 
-/* header */
+/* Header */
 
 .header{
-    width: 75%;
+    width: 90%;
     margin: auto;
-    padding: 0 30px;
-}
-
-/* Navigation */
-
-.head{
+    margin-top: 0;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
+.imgheader{
+    width: 70%;
+}
+
+.header>a{
+    order: 1;
+    width: 10%;
+    text-align: center;
+    color: #0065FC;
+}
 
 .menu ul{
     display: flex;
+    width: 20%;
+    margin: 0;
+    padding: 0;
 }
 
 .menu li{
-    padding: 10px ;
+    list-style: none;
+    padding: 2em;
+    border-top: 3px transparent solid;
 }
-
-.head a{
-   
-    text-align: initial;
-}
-
-/**/ 
 
 a:link{
     text-decoration: none;
@@ -49,28 +52,82 @@ a:visited{
     color: inherit;
 }
 
-li{
-    list-style: none;
-}
-
-
-
-.menu{
-    display: flex;
-    justify-content: center;
-}
-
-nav a:hover{
+.menu li:hover{
     color: #0065FC;
+    border-top: 3px #0065FC solid;
 }
+
+/* Section Recherche */
+
+.search{
+    width: 90%;
+    margin: auto;
+}
+
+.title{
+    margin: 5px 0px;
+}
+
+.title+p{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+/* Barre de recherche */
+
+.searchbar{
+    display: flex;
+}
+
+.searchbar i{
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    padding: 15px 20px;
+}    
+
+.searchbar input{
+    border: none;
+    border-top: solid 1px #F2F2F2;
+    border-bottom: solid 1px #F2F2F2;
+    padding-left: 15px;
+}
+
+.searchbar input:focus{
+    outline: none;
+}
+
+.button{
+    background-color: #0065FC;
+    color: white;
+    padding: 0 20px;
+    border: solid 1px #DEEBFF;
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+}
+
+/* Filtre */
 
 .submenu{
     display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.titlefilter{
+    margin-right: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.95em;
 }
 
 .filter{
     display: flex;
     justify-content: center;
+    align-items: center;
+    border: solid 2px #F2F2F2;
+    border-radius: 20px;
+    margin-right: 20px;
+    cursor: pointer;
 }
 
 .filter i{
@@ -78,17 +135,31 @@ nav a:hover{
     align-items: center;
     justify-content: center;
     color: #0065FC;
-    height: 35px;
-    width: 35px;
-    border: solid 1px #F2F2F2;
+    background-color: #DEEBFF;
+    height: 40px;
+    width: 40px;
+    border: solid 2px #DEEBFF;
     border-radius: 100%;
-    margin-right: 20px;
+    margin: -2px;
+    margin-right: 15px;
 }
+
+.filtername{
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.filter:hover{
+    background-color: #f4f8ff;
+    font-size: 1.2em;
+}
+
+/* info resultat de la recherche */
 
 .infoResult{
     display: flex;
     align-items: center;
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 .infoResult i{
@@ -96,29 +167,88 @@ nav a:hover{
     align-items: center;
     justify-content: center;
     color: #0065FC;
-    height: 35px;
-    width: 35px;
-    border: solid 1px #F2F2F2;
+    height: 30px;
+    width: 30px;
+    border: solid 2px #F2F2F2;
     border-radius: 100%;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
-section{
+/* Section/aside herbergement */
+
+#hosting{
     display: flex;
-    flex-flow: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
 }
+
+/* Hebergement */
+
+.hosting{
+    background-color: #F2F2F2;
+    border-radius: 20px 20px 20px 20px;
+    width: 63%;
+}
+
+.hosting h1{
+    padding-left: 20px;
+}
+
+.mosaic{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #hosting img{
-     width: 250px;
-     height: 110px;
+     max-width: max-content;
+     height: auto;
  }
 
-#activities img{
-    width: 200px;
+/* aside Populaire */
+
+.popularity{
+    background-color: #F2F2F2;
+    border-radius: 3%;
+    width: 33%;
 }
+
+.titlepopularity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titlepopularity h2{
+    padding-left: 20px;
+}
+
+.titlepopularity i{
+    padding-right: 20px;
+}
+
+
+/* Section activités */
+
+#activites {
+    background-color: #0065FC;
+    flex-flow: row;
+}
+
+#activities img{
+    height: 30%;
+}
+
+/* Footer */
 
 footer{
     display: flex;
     justify-content: space-around;
     background-color: #F2F2F2;
     margin: auto;
+}
+
+footer li{
+    list-style: none;
+    display: flex;
 }
