@@ -10,6 +10,10 @@ body{
     height: 100vh;
 }
 
+a{
+    color: inherit;
+}
+
 /* Header */
 
 .header{
@@ -31,6 +35,7 @@ body{
     text-align: center;
     font-size: 1.2em;
     color: #0065FC;
+    font-weight: bold;
 }
 
 .menu ul{
@@ -172,8 +177,8 @@ a:visited{
 /* Nouvelles règles (barre de recherche) pour les écrans avec 700px de large maximum */
 
 @media all and (max-width: 700px){
-    .button{
-        display: none;
+    .search p{
+        margin-bottom: 40px;
     }
 
     .iconsearch{
@@ -181,6 +186,10 @@ a:visited{
         color: white;
         border-radius: 15px 15px 15px 15px;
         padding: 15px 20px;
+    }
+    
+    .button{
+        display: none;
     }
 }
 
@@ -392,7 +401,6 @@ a:visited{
     width: 90%;
     border-radius: 20px;
     margin-bottom: 40px;
-    
 }
 
 .popularitysquaremosaic figure{
@@ -454,18 +462,172 @@ a:visited{
 #activities{
     width: 90%;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
 #activities h1{
     width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
 }
 
-#activities img{
-    width: 10%;
+.galerieactivities{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.halfimg{
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+}
+
+.activity1{
+    background-color: white;
+    width: 22%;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 10px rgba(53, 52, 52, 0.452);
+}
+
+.activity2{
+    background-color: white;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 10px rgba(53, 52, 52, 0.452);
+}
+
+.activity3{
+    background-color: white;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 10px rgba(53, 52, 52, 0.452);
+}
+
+.activity4{
+    background-color: white;
+    width: 22%;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 10px rgba(53, 52, 52, 0.452);
+}
+
+.activity5{
+    background-color: white;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 10px rgba(53, 52, 52, 0.452);
+}
+
+.activity6{
+    background-color: white;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 10px rgba(53, 52, 52, 0.452);
+}
+
+.galerieactivities figure{
+    margin: 0;
+}
+
+.galerieactivities figcaption{
+    margin: 10px;
+    font-weight: bold;
+}
+
+.activity1 img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activity2 img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activity3 img{
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activity4 img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activity5 img{
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activity6 img{
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.galerieactivities figcaption{
+    color: black;
+}
+
+/* Nouvelles règles (activités) pour les écrans avec 900px de large maximum */
+
+@media all and (max-width: 900px){
+    .galerieactivities{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .activity1{
+        width: 100%;
+    }
+
+    .activity2{
+        width: 100%;
+    }
+
+    .activity3{
+        width: 100%;
+    }
+
+    .activity4{
+        width: 100%;
+    }
+
+    .activity5{
+        width: 100%;
+    }
+
+    .activity6{
+        width: 100%;
+    }
+
+    .halfimg{
+        width: 100%;
+    }
+
+    .galerieactivities img{
+        height: 125px;
+    }
 }
 
 /* Footer */
